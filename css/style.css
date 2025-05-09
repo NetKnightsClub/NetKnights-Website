@@ -59,6 +59,15 @@ nav a:hover {
   margin-bottom: 1.5rem;
 }
 
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6); /* subtle dark overlay-- PLEASE WORK */
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
 .btn {
   background-color: transparent;
   color: #00bcd4;
