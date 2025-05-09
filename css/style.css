@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.6); /* subtle dark overlay-- PLEASE WORK */
+  background-color: rgba(0, 0, 0, 0.6); /* subtle dark overlay-- PLEASE WORK (it worked)*/ /* note to self-change the color to match the other stuff... maybe #0e1117?*/
   padding: 2rem;
   border-radius: 15px;
   max-width: 600px;
