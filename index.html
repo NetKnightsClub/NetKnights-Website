@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NetKnights Club</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/loader.css" />
   <link rel="icon" href="favicon.png" />
 </head>
 <body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="sphere"></div>
+  </div>
+
   <header>
     <div class="logo">🛡️ NetKnights</div>
     <nav>
@@ -46,6 +53,10 @@
     <p>Maintained by DrKel | Code under MIT | Content under CC BY 4.0</p>
   </footer>
 
+  <!-- Loader JS -->
+  <script src="js/loader.js"></script>
+  
+  <!-- Sticky Header Script -->
   <script>
     window.addEventListener('scroll', () => {
       const header = document.querySelector('header');
