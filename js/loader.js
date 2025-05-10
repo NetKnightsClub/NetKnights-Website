@@ -5,5 +5,5 @@ window.addEventListener("load", () => {
     if (loader) {
       loader.classList.add("fade-out");
     }
-  }, 50); // 0.5s delay for smoother transition
+  }, 500); // 0.5s delay for smoother transition
 });
