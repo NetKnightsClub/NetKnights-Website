@@ -93,9 +93,11 @@ Content (Docs, Art, etc.): Released under the Creative Commons Attribution 4.0 I
 Feel free to fork, remix, and share — just give credit where it's due!
 
 🤖 Maintained by
-The NetKnights Club's website team, led by: DrKel
+The NetKnights Club's Team Leader: DrKel
+
 Cybersecurity nerd, red-team gremlin, and your friendly local digital raccoon
-VisAwesme.github
+
+[VisAwesme](https://github.com/VisAwesme)
 
 >“Our website isn’t just a page.
 It’s a vibe. With better margins.” 🕶️
