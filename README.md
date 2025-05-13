@@ -96,8 +96,5 @@ Feel free to fork, remix, and share — just give credit where it's due!
 The NetKnights Club's Team Leader: DrKel
 
 Cybersecurity nerd, red-team gremlin, and your friendly local digital raccoon
-
 [VisAwesme](https://github.com/VisAwesme)
 
->“Our website isn’t just a page.
-It’s a vibe. With better margins.” 🕶️
