@@ -29,6 +29,9 @@ Built with:
 - 🎨 **SCSS**  
   For that extra flair (and frustration).
 
+  > [!NOTE]
+> This website is slowly being merged to DrKel's homelab server, if anything seems broken or off, please be patient.
+
 ---
 
 ## 🚀 Features
