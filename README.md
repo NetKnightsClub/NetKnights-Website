@@ -6,6 +6,13 @@ Welcome to the **NetKnights Club Website** repository! This is the source code f
 
 ---
 
+>[!IMPORTANT]
+> **We're Not *That* NetKnights**  
+> This website and club are in no way affiliated with [NetKnights GmbH](https://netknights.it/en/), the German IT security company.  
+> We’re just a community-driven, youth-led cybersecurity club hosted at a public library.  
+> If you're looking for professional IT services or solutions, you’re in the wrong castle.  
+> But if you want to learn, tinker, and explore cybersecurity while occasionally yelling at broken scripts — welcome aboard!
+
 ## ⚔️ About the Website
 
 The NetKnights Club website serves as:
