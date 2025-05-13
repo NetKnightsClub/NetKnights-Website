@@ -89,6 +89,7 @@ To run the website locally:
 Code: Released under the MIT License.
 
 Content (Docs, Art, etc.): Released under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
 Feel free to fork, remix, and share — just give credit where it's due!
 
 🤖 Maintained by
