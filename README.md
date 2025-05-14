@@ -34,8 +34,8 @@ Built with:
 >
 >https://netknights.org/
 >
->Known errors (And planned to fix)
->-Constant error 522, but it seems to try and load it.
+Known errors on the homelab
+-Constant error 522, but it seems to try and load it.
 ---
 
 ## 🚀 Features
