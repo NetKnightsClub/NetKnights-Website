@@ -1,5 +1,9 @@
 # 🌐 NetKnights Club Website
 
+>[!NOTE]
+>Our homelab server site is up! Still working out any bugs about it, so please be patient!
+>https://netknights.org/
+
 Welcome to the **NetKnights Club Website** repository! This is the source code for our static club website, lovingly crafted by chaotic-good hackers and cybersecurity enthusiasts. Hosted on GitHub Pages, this website is our digital home for sharing updates, resources, and chaotic energy with the world.
 
 > "Protect the net. Educate the future. Knight the nerds."
