@@ -1,9 +1,5 @@
 # 🌐 NetKnights Club Website
 
->[!NOTE]
->Our homelab server site is up! Still working out any bugs about it, so please be patient!
->https://netknights.org/
-
 Welcome to the **NetKnights Club Website** repository! This is the source code for our static club website, lovingly crafted by chaotic-good hackers and cybersecurity enthusiasts. Hosted on GitHub Pages, this website is our digital home for sharing updates, resources, and chaotic energy with the world.
 
 > "Protect the net. Educate the future. Knight the nerds."
@@ -33,11 +29,11 @@ Built with:
 - 🎨 **SCSS**  
   For that extra flair (and frustration).
 
-> [!NOTE]
-> This website is in the process of being transitioned to DrKel's homelab server.
-> During this migration, some features or pages may appear broken or behave unexpectedly.
-> We appreciate your patience and understanding as we work to complete this transition.
-
+>[!NOTE]
+>Our homelab server site is up! Still working out any bugs about it, so please be patient!
+>https://netknights.org/
+>Known errors (And planned to fix)
+>Constant error 522, but it seems to try and load it.
 ---
 
 ## 🚀 Features
