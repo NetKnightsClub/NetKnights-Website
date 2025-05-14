@@ -33,9 +33,10 @@ Built with:
 >Our homelab server site is up! Still working out any bugs about it, so please be patient!
 >
 >https://netknights.org/
->
+
 Known errors on the homelab
--Constant error 522, but it seems to try and load it.
+- Constant error 522, but it seems to try and load it.
+
 ---
 
 ## 🚀 Features
