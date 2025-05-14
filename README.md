@@ -62,9 +62,9 @@ Here's how the repo is organized:
   Images, icons, and other media files.
 - **`/docs`**  
   Documentation and resources for contributors.
-- **`/scss`**
-  Sassy CSS for the website.
-- **`/pages`**
+- **`/scss`**                                                                                                                                                                       
+  Sassy CSS for the website.                                                
+- **`/pages`**                                                                                                                                                                      
   Pages for the website, to keep it just a bit more organized.
 
 ---
