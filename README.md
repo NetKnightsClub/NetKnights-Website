@@ -96,8 +96,10 @@ To run the website locally:
    git clone https://github.com/NetKnightsClub/NetKnights-Website.git
    
 2. Open index.html in your browser. (Reccomend using the Live Server VSCode extension)
+
+   ---
    
-📜 License
+📜 License                                                                                                                                                                          
 Code: Released under the MIT License.
 
 Content (Docs, Art, etc.): Released under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
