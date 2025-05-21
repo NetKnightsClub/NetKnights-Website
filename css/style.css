@@ -142,6 +142,118 @@ nav a:hover {
   color: #c5c6c7;
 }
 
+.projects-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  color: #c5c6c7;
+  font-family: 'JetBrains Mono', monospace, sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #66fcf1;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #45a29e;
+  letter-spacing: 0.1em;
+}
+
+.project-card {
+  background: #0b0c10;
+  border: 2px solid #45a29e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 12px #45a29e44;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px #66fcf1;
+}
+
+.project-summary {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.project-summary h3 {
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  color: #45a29e;
+  text-shadow: 0 0 8px #45a29eaa;
+}
+
+.project-summary p {
+  font-size: 1.05rem;
+  color: #a0a6aa;
+  line-height: 1.4;
+}
+
+/* Image styling */
+.project-card img {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 4px #45a29e99);
+  max-width: 320px;
+}
+
+/* Tiny glitch effect on hover — subtle enough to not annoy */
+.project-card:hover::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 98%;
+  height: 96%;
+  border: 1px solid #66fcf1aa;
+  animation: glitch 0.3s infinite alternate;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(0 0 20% 0);
+    transform: translate(0);
+  }
+  50% {
+    clip-path: inset(20% 0 0 0);
+    transform: translate(1px, -1px);
+  }
+  100% {
+    clip-path: inset(0 0 20% 0);
+    transform: translate(0);
+  }
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .project-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .project-summary {
+    flex: 1 1 60%;
+    padding-right: 1rem;
+    text-align: left;
+  }
+  .project-card img {
+    flex: 1 1 35%;
+    max-width: none;
+  }
+}
+
+
 /* FOOTER */
 footer {
   background-color: #1f2833;
