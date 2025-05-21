@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/loader.css" />
   <link rel="icon" href="favicon.png" />
+
+  <!-- Smooth scroll magic -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
@@ -18,50 +25,71 @@
   <header>
     <div class="logo">🛡️ NetKnights</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="pages/join.html">Join</a>
-      <a href="pages/docs.html">Docs</a>
-      <a href="pages/projects.html">Projects</a>
+      <!-- yes these aren't separate pages anymore. MAGIC!! -->
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-text">
       <h2>Community-Driven</h2>
       <h1>Cybersecurity Club</h1>
       <p>Protect the Net. Educate the Future. Knight the Nerds.</p>
-      <a href="#read-more" class="btn">READ MORE!</a>
+      <a href="#about" class="btn">READ MORE!</a>
     </div>
   </section>
 
-  <section class="info-cards">
+  <section class="info-cards" id="about">
     <div class="card">
       <h3>⚔️ About Us</h3>
       <p>Chill vibes, cool hacks, and ethical chaos. We break stuff in VMs for fun. We use Arch, btw.</p>
     </div>
+  </section>
+
+  <section class="info-cards" id="projects">
     <div class="card">
       <h3>🌐 Projects</h3>
       <p>CTFs, LAN parties, scripting tools, and zines. Built by nerds, for nerds.</p>
     </div>
+  </section>
+
+  <section class="info-cards" id="join">
     <div class="card">
       <h3>🧠 Join the Knights</h3>
       <p>Noob? Script kiddie? Elite sudo-slinger? All welcome. Especially if you're curious.</p>
+      <!-- real buttons that... dont go anywhere! i love 404s! -->
+      <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="btn">Join the Discord</a> <!-- still a dead link... nothing changed -->
+      <a href="mailto:netknights@proton.me" class="btn">Email Us</a>
+    </div>
+  </section>
+
+  <section class="info-cards" id="contact">
+    <div class="card">
+      <h3>📬 Contact</h3>
+      <p>Have questions? Want us at your next hackathon? Or just wanna flex your rickroll payload? Hit us up.</p>
+      <p>Email: <a href="mailto:contact@netknights.org">netknights@proton.me</a></p> 
+      <p>Discord: <a href="https://discord.gg/YOUR_INVITE" target="_blank">Join Here</a></p> <!--hehe dead link... because we dont have a discord server-->
     </div>
   </section>
 
   <footer>
     <p>Maintained by DrKel | Code under MIT | Content under CC BY 4.0</p>
+    <p><small>We use Arch. We are legally obligated to tell you that.</small></p>
   </footer>
-
 
   <!-- note to self, make this more orgainzed-->
   <!-- Disclaimer JS (NEEDS FIXING!) -->
- <!-- <script src="js/disclaimer.js"></script> -->
+  <!-- <script src="js/disclaimer.js"></script> -->
+
   <!-- Loader JS -->
   <script src="js/loader.js"></script>
-  
+
   <!-- Sticky Header Script -->
-  <!-- its so small i just made it a part of the html, dont judge me-->
+  <!-- its so small i just made it a part of the html, dont judge me >:3c -->
   <script>
     window.addEventListener('scroll', () => {
       const header = document.querySelector('header');
@@ -71,6 +99,11 @@
         header.classList.remove('sticky-active');
       }
     });
+  </script>
+
+  <!-- hello source peeper. you are valid. -->
+  <script>
+    console.log("%cWelcome to NetKnights 👾", "color: lime; background: black; font-family: monospace; padding: 10px; border-radius: 5px");
   </script>
 </body>
 </html>
