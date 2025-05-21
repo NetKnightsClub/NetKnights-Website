@@ -35,9 +35,8 @@ Built with:
 >https://netknights.org/
 
 Known errors on the homelab
-- Constant error 522, but it seems to try and load it.
-- bruh, i forgot to forward the 2 ports the site uses... im gonna freak out
-- ERROR 403 NOW?!? BRO-
+- Currently no issues... yet.
+
 
 ## 🚀 Features
 
