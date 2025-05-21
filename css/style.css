@@ -66,14 +66,16 @@ nav a:hover {
 
 /* Hero section */
 .hero {
-  height: 100vh;
+  height: calc(100vh - 80px); /* make room for fixed header */
+  padding-top: 80px;
   background: linear-gradient(to right, #4D76BD, #336699);
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .hero-text h1 {
@@ -139,9 +141,14 @@ nav a:hover {
   color: #555;
 }
 
-/* Projects and Join sections */
+/* Sections: Projects and Join (scroll targets go brrrrr) */
+section {
+  scroll-margin-top: 100px;
+}
+
 #projects, #join {
-  padding: 4em 2em;
+  padding: 3em 1.5em;
+  margin-top: -1em;
   background-color: #f0f0f0;
   text-align: center;
 }
@@ -157,6 +164,11 @@ nav a:hover {
   margin: 0 auto;
 }
 
+/* Smooth spacing fix for any other sections */
+section:not(.hero):not(.info-cards) {
+  margin-top: -2em;
+}
+
 /* Footer */
 footer {
   background-color: #333;
@@ -165,3 +177,5 @@ footer {
   padding: 2em;
   font-size: 0.9em;
 }
+
+
