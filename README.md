@@ -22,6 +22,8 @@ The NetKnights Club website serves as:
   Find guides, cheat sheets, and learning modules (Coming Soon™).
 - **A showcase of our chaotic creativity**  
   Expect lots of fancy CSS, broken scripts, and “it works on my machine” moments.
+- **Beta Build**
+  https://netknightsclub.github.io/NetKnights-Website/
 
 Built with:
 - 🌐 **HTML, CSS, and JavaScript**  
