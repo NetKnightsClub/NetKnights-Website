@@ -61,6 +61,9 @@ The website has been completely redesigned with a professional focus:
 Known errors on the homelab
 - Currently no issues... yet.
 
+>[!NOTE]
+>If'd you like to see the beta build for... whatever reason, the link is under the github pages. "http://netknightsclub.github.io/NetKnights-Website/"
+
 
 ## 🚀 Features
 
