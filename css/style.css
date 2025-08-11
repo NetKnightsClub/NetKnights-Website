@@ -1,3 +1,15 @@
+/*!
+ * NetKnights Cybersecurity Club Website Styles
+ * Professional styling for community-driven cybersecurity education
+ *
+ * Color Palette:
+ * - Primary: #66fcf1 (Cyan)
+ * - Secondary: #45a29e (Teal)
+ * - Background: #0b0c10 (Dark Blue)
+ * - Surface: #1f2833 (Blue Gray)
+ * - Text: #c5c6c7 (Light Gray)
+ */
+
 /* RESET & BASE */
 * {
   margin: 0;
@@ -11,6 +23,30 @@ html, body {
   color: #c5c6c7;
   scroll-behavior: smooth;
   line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Accessibility improvements */
+*:focus {
+  outline: 2px solid #66fcf1;
+  outline-offset: 2px;
+}
+
+/* Skip to main content for screen readers */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #66fcf1;
+  color: #0b0c10;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 6px;
 }
 
 a {
@@ -143,58 +179,86 @@ nav a:hover {
 }
 
 .projects-section {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
   color: #c5c6c7;
-  font-family: 'JetBrains Mono', monospace, sans-serif;
+  background-color: #0b0c10;
 }
 
 .section-title {
   font-size: 2.5rem;
   color: #66fcf1;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-shadow: 0 0 10px #45a29e;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #c5c6c7;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .project-card {
-  background: #0b0c10;
+  background: #1f2833;
   border: 2px solid #45a29e;
-  border-radius: 10px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 12px #45a29e44;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(69, 162, 158, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
   position: relative;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 25px #66fcf1;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(102, 252, 241, 0.3);
 }
 
 .project-summary {
   padding: 0 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .project-summary h3 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
   font-weight: 700;
-  color: #45a29e;
-  text-shadow: 0 0 8px #45a29eaa;
+  color: #66fcf1;
+  font-size: 1.5rem;
+  text-shadow: 0 0 8px rgba(102, 252, 241, 0.5);
 }
 
 .project-summary p {
-  font-size: 1.05rem;
-  color: #a0a6aa;
-  line-height: 1.4;
+  font-size: 1.1rem;
+  color: #c5c6c7;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.meeting-info {
+  background-color: #0b0c10;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #66fcf1;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.meeting-info strong {
+  color: #66fcf1;
 }
 
 /* Image styling */
@@ -206,33 +270,105 @@ nav a:hover {
   max-width: 320px;
 }
 
-/* Tiny glitch effect on hover — subtle enough to not annoy */
-.project-card:hover::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 98%;
-  height: 96%;
-  border: 1px solid #66fcf1aa;
-  animation: glitch 0.3s infinite alternate;
-  pointer-events: none;
-  border-radius: 10px;
+/* Removed glitch effect for more professional appearance */
+
+/* JOIN SECTION */
+.join-section {
+  background-color: #1f2833;
+  padding: 4rem 2rem;
 }
 
-@keyframes glitch {
-  0% {
-    clip-path: inset(0 0 20% 0);
-    transform: translate(0);
-  }
-  50% {
-    clip-path: inset(20% 0 0 0);
-    transform: translate(1px, -1px);
-  }
-  100% {
-    clip-path: inset(0 0 20% 0);
-    transform: translate(0);
-  }
+.join-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.join-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.join-card {
+  background-color: #0b0c10;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #45a29e;
+  box-shadow: 0 4px 15px rgba(69, 162, 158, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(102, 252, 241, 0.2);
+}
+
+.join-card h3 {
+  color: #66fcf1;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.join-card p {
+  color: #c5c6c7;
+  line-height: 1.6;
+}
+
+.cta-section {
+  text-align: center;
+  background-color: #0b0c10;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid #66fcf1;
+}
+
+.cta-section h3 {
+  color: #66fcf1;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.cta-section p {
+  color: #c5c6c7;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #66fcf1;
+  color: #0b0c10;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a29e;
+  transform: scale(1.05);
+}
+
+/* DISCORD EMBED STYLING */
+.discord-embed {
+  background-color: #0b0c10;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #45a29e;
+  box-shadow: 0 4px 20px rgba(69, 162, 158, 0.2);
+}
+
+.discord-embed h3 {
+  color: #66fcf1;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.discord-embed iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
 }
 
 /* Responsive */
@@ -240,11 +376,11 @@ nav a:hover {
   .project-card {
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 2rem;
   }
   .project-summary {
     flex: 1 1 60%;
-    padding-right: 1rem;
+    padding-right: 2rem;
     text-align: left;
   }
   .project-card img {
@@ -256,12 +392,59 @@ nav a:hover {
 
 /* FOOTER */
 footer {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  border-top: 2px solid #45a29e;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h4 {
+  color: #66fcf1;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #c5c6c7;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #66fcf1;
+}
+
+.footer-bottom {
   background-color: #1f2833;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 2rem;
   font-size: 0.9rem;
-  color: #c5c6c7;
   border-top: 1px solid #45a29e22;
+}
+
+.footer-bottom a {
+  color: #66fcf1;
 }
 
 /* MEDIA QUERIES */
@@ -269,6 +452,33 @@ footer {
   .info-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-summary {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .join-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   nav {
@@ -279,5 +489,66 @@ footer {
 
   nav a {
     margin-left: 0;
+  }
+
+  header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .join-card {
+    padding: 1.5rem;
+  }
+
+  .cta-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .discord-embed iframe {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .loader, .skip-link {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .hero {
+    background: none;
   }
 }

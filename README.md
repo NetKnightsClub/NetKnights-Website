@@ -1,6 +1,6 @@
-# 🌐 NetKnights Club Website
+# 🛡️ NetKnights Cybersecurity Club Website
 
-Welcome to the **NetKnights Club Website** repository! This is the source code for our static club website, lovingly crafted by chaotic-good hackers and cybersecurity enthusiasts. Hosted on GitHub Pages, this website is our digital home for sharing updates, resources, and chaotic energy with the world.
+Welcome to the **NetKnights Cybersecurity Club Website** repository! This is the source code for our professional club website, designed to showcase our community-driven approach to cybersecurity education. Hosted on GitHub Pages, this website serves as our digital headquarters for sharing knowledge, resources, and opportunities with current and prospective members.
 
 > "Protect the net. Educate the future. Knight the nerds."
 
@@ -30,6 +30,28 @@ Built with:
   Simple, static, and stylish.
 - 🎨 **SCSS**  
   For that extra flair (and frustration).
+
+## 🎨 Recent Professional Improvements (2025)
+
+The website has been completely redesigned with a professional focus:
+
+### Content & Structure
+- **Professional language** - Replaced casual tone with clear, educational messaging
+- **Complete sections** - Added detailed information for all branches and activities
+- **Clear navigation** - Streamlined menu structure and improved user flow
+- **Meeting information** - Added specific times and locations for all branches
+
+### Design & Accessibility
+- **Modern styling** - Professional color scheme with consistent branding
+- **Responsive design** - Optimized for all devices from mobile to desktop
+- **Accessibility features** - ARIA labels, semantic HTML, keyboard navigation
+- **Typography improvements** - Better readability and visual hierarchy
+
+### Technical Enhancements
+- **Clean code structure** - Removed placeholder comments and organized CSS
+- **Performance optimization** - Streamlined styles and improved loading
+- **SEO improvements** - Better meta tags and semantic markup
+- **Documentation** - Added comprehensive code comments and README updates
 
 >[!NOTE]
 >Our homelab server site is up! Still working out any bugs about it, so please be patient!

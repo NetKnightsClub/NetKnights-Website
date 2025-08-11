@@ -3,102 +3,175 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NetKnights Club</title>
+  <meta name="description" content="NetKnights Cybersecurity Club - Advancing cybersecurity knowledge through hands-on learning, ethical hacking, CTF competitions, and collaborative research. Join our community of security professionals."/>
+  <meta name="keywords" content="cybersecurity, ethical hacking, CTF, penetration testing, security training, student organization"/>
+  <title>NetKnights Cybersecurity Club - Community-Driven Security Education</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/loader.css" />
   <link rel="icon" href="favicon.png" />
 </head>
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Loader -->
-  <div id="loader">
+  <div id="loader" aria-hidden="true">
     <div class="sphere"></div>
   </div>
 
-  <header>
+  <header role="banner">
     <div class="logo">🛡️ NetKnights</div>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#branches">Branches</a>
+      <a href="#projects">Branches</a>
       <a href="#join">Join</a>
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h2>Community-Driven</h2>
-      <h1>Cybersecurity Club</h1>
-      <p>Protect the Net. Educate the Future. Knight the Nerds.</p>
-      <a href="#about" class="btn">READ MORE!</a>
-    </div>
-  </section>
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h2>Community-Driven</h2>
+        <h1>Cybersecurity Club</h1>
+        <p>Advancing cybersecurity knowledge through hands-on learning, ethical hacking, and collaborative research.</p>
+        <a href="#about" class="btn" aria-label="Learn more about NetKnights">Learn More</a>
+      </div>
+    </section>
 
   <section class="info-cards" id="about">
     <div class="card">
-      <h3>⚔️ About Us</h3>
-      <p>Chill vibes, cool hacks, and ethical chaos. We break stuff in VMs for fun. We use Arch, btw.</p>
+      <h3>🛡️ About NetKnights</h3>
+      <p>NetKnights is a student-driven cybersecurity organization focused on practical learning, ethical hacking, and building the next generation of security professionals through hands-on training and collaborative projects.</p>
     </div>
     <div class="card">
-      <h3>🌐 Projects</h3>
-      <p>CTFs, LAN parties, scripting tools, and zines. Built by nerds, for nerds.</p>
+      <h3>🎯 Our Mission</h3>
+      <p>We provide comprehensive cybersecurity education through Capture The Flag competitions, penetration testing workshops, security research, and real-world project development in a supportive learning environment.</p>
     </div>
     <div class="card">
-      <h3>🧠 Join the Knights</h3>
-      <p>Noob? Script kiddie? Elite sudo-slinger? All welcome. Especially if you're curious.</p>
+      <h3>🤝 Join Our Community</h3>
+      <p>Whether you're a beginner curious about cybersecurity or an experienced practitioner, NetKnights welcomes all skill levels. Learn, grow, and contribute to our vibrant security community.</p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <h2>Our Projects</h2>
-    <p>Details about ongoing and past projects go here.</p>
-    <!-- ADD INFO HERE LATER!@@&*!^^@^!&%#^&!#%(&!^%(&^!!!! -->
+  <section class="projects-section" id="projects">
+    <h2 class="section-title">Our Branches</h2>
+    <p class="section-description">NetKnights operates through specialized branches, each focusing on different aspects of cybersecurity education and practical application.</p>
+
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>CyberWatch Division (CW)/ThreatOps (TO)</h3>
+        <p>Our red-teaming and blue-teaming specialists who handle offensive and defensive cybersecurity operations. Think of them as the digital knights who both attack and defend the castle - because why choose sides when you can master both?</p>   <!--  watch this just like, sit like this and be published to the server, and then future me will be like "oh yeah i should probably finish this" and then never do it, because i started ANOTHER projhect to work on, yeah, future me, you suck, finish this later -->
+        <div class="meeting-info">
+          <strong>Meeting Time:</strong> To Be Determined
+        </div>
+      </div>
+      <img src="https://via.placeholder.com/300x180/45a29e/ffffff?text=CyberWatch+%2F+ThreatOps" alt="CyberWatch Division and ThreatOps" />
+    </div>
+
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>Sentinel Engineering Corps (SEC)</h3>
+        <p>Innovation hub where we build, develop, and experiment with cutting-edge security tools and tech. These are the mad scientists of cybersecurity - they break things, fix things, and occasionally create things that shouldn't exist but are absolutely awesome.</p> <!--ughhh,,, i wanna be LAZYYYY and not write this right now, so uh, future me, finish this later -->
+        <div class="meeting-info">
+          <strong>Meeting Time:</strong> To Be Determined
+        </div>
+      </div>
+      <img src="https://via.placeholder.com/300x180/66fcf1/000000?text=Sentinel+Engineering" alt="Sentinel Engineering Corps" />
+    </div>
+
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>Obscura Division/Shadow-Cell</h3>
+        <p>OSINT and recon experts focused on intelligence gathering and stealth operations. These digital ninjas specialize in finding information that others can't - or shouldn't. They're basically professional internet stalkers, but for good reasons.</p> <!--finish this later... or uh, never idfc future me -->
+        <div class="meeting-info">
+          <strong>Meeting Time:</strong> To Be Determined
+        </div>
+      </div>
+      <img src="https://via.placeholder.com/300x180/1f2833/66fcf1?text=Obscura+Division" alt="Obscura Division Shadow-Cell" />
+    </div>
   </section>
 
-  <!-- Branches Section -->
-  <section class="branches">
-  <h2 class="section-title">Our Projects</h2>
 
-  <div class="branch-card">
-    <div class="branch-summary">
-      <h3>Cyber Security Training</h3>
-      <p>Crash course for budding hackers: learn pentesting, blue team ops, and Linux magic.</p>
-    </div>
-    <img src="https://via.placeholder.com/300x180" alt="Cyber Security Training" />
-  </div>
+<section class="join-section" id="join">
+  <div class="join-container">
+    <h2 class="section-title">Join NetKnights</h2>
+    <p class="section-description">Ready to advance your cybersecurity skills and join a community of passionate learners? Here's how to get started with NetKnights.</p>
 
-  <div class="branch-card">
-    <div class="branch-summary">
-      <h3>CTF Challenges</h3>
-      <p>Put your skills to the test with beginner to intermediate Capture The Flag contests.</p>
+    <div class="join-cards">
+      <div class="join-card">
+        <h3>🚀 Getting Started</h3>
+        <p>New to cybersecurity? No problem! Join our CyberWatch Division (CW)/ThreatOps (TO) - our general training branch that welcomes all skill levels. Meeting times TBD, but we promise it'll be worth the wait! We provide foundational knowledge to get you started.</p>
+      </div>
+
+      <div class="join-card">
+        <h3>📧 Contact Information</h3>
+        <p>Interested in joining or have questions? Reach out to us through our official channels or attend one of our weekly meetings to learn more about our programs and community.</p>
+      </div>
+
+      <div class="join-card">
+        <h3>🎯 What to Expect</h3>
+        <p>Hands-on workshops, CTF competitions, networking opportunities, mentorship from experienced members, and real-world project experience that will enhance your cybersecurity career prospects.</p>
+      </div>
     </div>
-    <img src="https://via.placeholder.com/300x180" alt="CTF Challenges" />
+
+    <div class="cta-section">
+      <h3>Ready to Join?</h3>
+      <p>Visit us during our next meeting or connect with us online to become part of the NetKnights community.</p>
+      <a href="mailto:join.netknights@proton.me?subject=NetKnights%20Membership%20Inquiry&body=Hi%20NetKnights!%0A%0AI'm%20interested%20in%20joining%20the%20club.%20Please%20let%20me%20know%20more%20about%3A%0A%0A-%20Meeting%20times%20and%20locations%0A-%20Which%20division%20might%20be%20best%20for%20me%0A-%20What%20to%20expect%20as%20a%20new%20member%0A%0AThanks!" class="btn btn-primary" aria-label="Email NetKnights to join">Get In Touch</a>
+      <!-- TODO: make the get in touch thing like a... mailto: thing to the join.netknights@proton.me thing, then add a bot script thing to send the info drkel (me-the person maintaining this) or a division captain-->
+      <!-- ^ DONE! Now it opens their email client with a pre-filled message. Future you can thank present me later  -->
+    </div>
+
+    <!-- Discord Embed — because you want that hype community nearby -->
+     <!-- TODO: fix, this honestly looks horrible on the live preview (i hate discord embeds) -->
+    <div class="discord-embed" style="margin-top: 2rem; text-align: center;">
+      <h3>Join Our Discord</h3>
+      <iframe 
+        src="https://discord.com/widget?id=1403504910980612176&theme=dark" 
+        width="350" 
+        height="500" 
+        allowtransparency="true" 
+        frameborder="0" 
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+      </iframe>
+    </div>
   </div>
 </section>
+  </main>
 
-  
-  <!-- Join Section -->
-  <section id="join">
-    <h2>Join Us</h2>
-    <p>Information on how to join the NetKnights Club.</p>
-    <!-- add the info here later... -->
-  </section>
-
-  
-  <footer>
-    <p>Maintained by DrKel | Code under MIT | Content under CC BY 4.0</p>
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>NetKnights Cybersecurity Club</h4>
+        <p>Advancing cybersecurity education through hands-on learning and community collaboration.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Branches</a></li>
+          <li><a href="#join">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Meeting Times</h4>
+        <p><strong>CW/TO:</strong> TBD</p>
+        <p><strong>SEC:</strong> TBD</p>
+        <p><strong>Obscura/Shadow-Cell:</strong> TBD</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NetKnights Cybersecurity Club | Maintained by DrKel | <a href="#">Code under MIT</a> | <a href="#">Content under CC BY 4.0</a></p>
+    </div>
   </footer>
 
-  <!-- note to self, make this more orgainzed-->
-  <!-- Disclaimer JS (NEEDS FIXING!) -->
-  <!-- <script src="js/disclaimer.js"></script> -->
-  <!-- Loader JS -->
+  <!-- Scripts -->
   <script src="js/loader.js"></script>
-  
+
   <!-- Sticky Header Script -->
-  <!-- its so small i just made it a part of the html, dont judge me-->
   <script>
     window.addEventListener('scroll', () => {
       const header = document.querySelector('header');
