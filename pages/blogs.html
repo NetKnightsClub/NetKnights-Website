@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NetKnights Cybersecurity Blog - Latest insights, tutorials, and research from our cybersecurity community" />
+  <meta name="keywords" content="cybersecurity blog, security tutorials, CTF writeups, penetration testing, ethical hacking" />
+  <title>NetKnights Blog - Cybersecurity Insights & Tutorials</title>
+  <link rel="stylesheet" href="../css/pages-style.css" />
+  <link rel="stylesheet" href="../css/blog-style.css" />
+  <link rel="icon" href="../favicon.png" />
+</head>
+<body>
+  <header>
+    <div class="logo">🛡️ NetKnights</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Branches</a>
+      <a href="../index.html#join">Join</a>
+      <a href="../pages/blogs.html" class="active">Blog</a>
+    </nav>
+  </header>
+
+  <main class="blog-content">
+    <div class="blog-header">
+      <h1>📝 NetKnights Blog</h1>
+      <p>Insights, tutorials, and research from our cybersecurity community</p>
+    </div>
+
+    <div class="blog-categories">
+      <button class="category-filter active" data-category="all">All Posts</button>
+      <button class="category-filter" data-category="tutorials">Tutorials</button>
+      <button class="category-filter" data-category="ctf">CTF Writeups</button>
+      <button class="category-filter" data-category="research">Research</button>
+      <button class="category-filter" data-category="news">Club News</button>
+    </div>
+
+    <div class="blog-grid" id="blog-posts">
+      <!-- Blog posts will be dynamically loaded here -->
+      
+      <article class="blog-card" data-category="tutorials">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/400x200/45a29e/ffffff?text=Getting+Started+with+CTFs" alt="Getting Started with CTFs" />
+        </div>
+        <div class="blog-content-card">
+          <div class="blog-meta">
+            <span class="blog-category">Tutorial</span>
+            <span class="blog-date">N/A (Test)</span>
+          </div>
+          <h3><a href="blogs/getting-started-with-ctfs.html">Getting Started with Capture The Flag Competitions</a></h3>
+          <p>A beginner's guide to CTF competitions, covering the basics of different challenge types and how to approach your first competition.</p>
+          <div class="blog-author">
+            <span>testing example by claude sonnet 4</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-category="research">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/400x200/66fcf1/000000?text=Network+Security+Trends" alt="Network Security Trends" />
+        </div>
+        <div class="blog-content-card">
+          <div class="blog-meta">
+            <span class="blog-category">Research</span>
+            <span class="blog-date">N/A (Test)</span>
+          </div>
+          <h3><a href="blogs/network-security-trends-2025.html">Network Security Trends in 2025</a></h3>
+          <p>An analysis of emerging network security threats and the latest defensive strategies being developed by the cybersecurity community.</p>
+          <div class="blog-author">
+            <span>testing example by claude sonnet 4</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="blog-card" data-category="news">
+        <div class="blog-image">
+          <img src="https://via.placeholder.com/400x200/45a29e/ffffff?text=Club+Updates" alt="Club Updates" />
+        </div>
+        <div class="blog-content-card">
+          <div class="blog-meta">
+            <span class="blog-category">Club News</span>
+            <span class="blog-date">N/A (Test)</span>
+          </div>
+          <h3><a href="blogs/welcome-to-netknights-blog.html">Welcome to the NetKnights Blog!</a></h3>
+          <p>Introducing our new blog platform where we'll share knowledge, tutorials, research findings, and club updates with the community.</p>
+          <div class="blog-author">
+            <span>testing example by claude sonnet 4</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="blog-pagination">
+      <button class="pagination-btn" disabled>← Previous</button>
+      <span class="pagination-info">Page 1 of 1</span>
+      <button class="pagination-btn" disabled>Next →</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NetKnights Cybersecurity Club | <a href="netknights-disclaimer.html">Not Affiliated with NetKnights GmbH</a> | Maintained by DrKel | <a href="mit-license.html">Code under MIT</a> | <a href="cc-by-4.0-license.html">Content under CC BY 4.0</a></p>
+  </footer>
+
+  <!-- Blog filtering script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryFilters = document.querySelectorAll('.category-filter');
+      const blogPosts = document.querySelectorAll('.blog-card');
+
+      categoryFilters.forEach(filter => {
+        filter.addEventListener('click', function() {
+          // Remove active class from all filters
+          categoryFilters.forEach(f => f.classList.remove('active'));
+          // Add active class to clicked filter
+          this.classList.add('active');
+
+          const selectedCategory = this.getAttribute('data-category');
+
+          blogPosts.forEach(post => {
+            if (selectedCategory === 'all' || post.getAttribute('data-category') === selectedCategory) {
+              post.style.display = 'block';
+            } else {
+              post.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Page not found - NetKnights Cybersecurity Club" />
+  <title>404 - Page Not Found | NetKnights Cybersecurity Club</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages-style.css" />
+  <link rel="icon" href="favicon.png" />
+  <style>
+    /* Custom 404 page styles */
+    .error-container {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #0b0c10 0%, #1f2833 100%);
+    }
+
+    .error-code {
+      font-size: 8rem;
+      font-weight: bold;
+      color: #66fcf1;
+      text-shadow: 0 0 20px rgba(102, 252, 241, 0.5);
+      margin-bottom: 1rem;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 20px rgba(102, 252, 241, 0.5); }
+      to { text-shadow: 0 0 30px rgba(102, 252, 241, 0.8), 0 0 40px rgba(102, 252, 241, 0.3); }
+    }
+
+    .error-title {
+      font-size: 2.5rem;
+      color: #45a29e;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .error-message {
+      font-size: 1.2rem;
+      color: #c5c6c7;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .error-suggestions {
+      background-color: #1f2833;
+      border: 2px solid #45a29e;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+      max-width: 500px;
+    }
+
+    .error-suggestions h3 {
+      color: #66fcf1;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .error-suggestions ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .error-suggestions li {
+      margin: 0.8rem 0;
+      padding: 0.5rem;
+      background-color: #0b0c10;
+      border-radius: 6px;
+      border-left: 3px solid #66fcf1;
+    }
+
+    .error-suggestions a {
+      color: #66fcf1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .error-suggestions a:hover {
+      color: #45a29e;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .error-btn {
+      background-color: #66fcf1;
+      color: #0b0c10;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border: 2px solid #66fcf1;
+    }
+
+    .error-btn:hover {
+      background-color: transparent;
+      color: #66fcf1;
+      transform: translateY(-2px);
+    }
+
+    .error-btn.secondary {
+      background-color: transparent;
+      color: #45a29e;
+      border-color: #45a29e;
+    }
+
+    .error-btn.secondary:hover {
+      background-color: #45a29e;
+      color: #0b0c10;
+    }
+
+    .error-ascii {
+      font-family: 'Courier New', monospace;
+      color: #45a29e;
+      font-size: 0.8rem;
+      margin: 2rem 0;
+      white-space: pre-line;
+      opacity: 0.7;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 6rem;
+      }
+      
+      .error-title {
+        font-size: 2rem;
+      }
+      
+      .error-message {
+        font-size: 1.1rem;
+      }
+      
+      .error-actions {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .error-btn {
+        width: 200px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .error-code {
+        font-size: 4rem;
+      }
+      
+      .error-title {
+        font-size: 1.8rem;
+      }
+      
+      .error-suggestions {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="logo">🛡️ NetKnights</div>
+    <nav role="navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Branches</a>
+      <a href="pages/blogs.html">Blog</a>
+      <a href="index.html#join">Join</a>
+    </nav>
+  </header>
+
+  <main class="error-container">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-message">
+      Looks like this page has been compromised or moved to a more secure location! 
+      Even our best cyber knights couldn't locate this resource.
+    </p>
+    <pre class="error-ascii">
+      .----.   @   @
+     / .-"-.`.  \v/
+     | | '\ \ \_/ )
+   ,-\ `-.' /.'  /
+  '---`----'----'
+    </pre>
+
+    <div class="error-suggestions">
+      <h3>🔍 Suggested Actions:</h3>
+      <ul>
+        <li><a href="index.html">🏠 Return to Home Base</a></li>
+        <li><a href="pages/blogs.html">📝 Check out our Blog</a></li>
+        <li><a href="index.html#about">ℹ️ Learn About NetKnights</a></li>
+        <li><a href="index.html#join">🤝 Join Our Community</a></li>
+      </ul>
+    </div>
+
+    <div class="error-actions">
+      <a href="index.html" class="error-btn">🏠 Go Home</a>
+      <a href="javascript:history.back()" class="error-btn secondary">← Go Back</a>
+    </div>
+
+    <p style="margin-top: 2rem; color: #999; font-size: 0.9rem;">
+      If you believe this is an error, please contact us at 
+      <a href="mailto:netknights@proton.me" style="color: #66fcf1;">netknights@proton.me</a>
+    </p>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content" style="display: block; text-align: center;">
+      <p>&copy; 2025 NetKnights Cybersecurity Club | <a href="pages/netknights-disclaimer.html">Not Affiliated with NetKnights GmbH</a> | Maintained by DrKel | <a href="pages/mit-license.html">Code under MIT</a> | <a href="pages/cc-by-4.0-license.html">Content under CC BY 4.0</a></p>
+    </div>
+  </footer>
+
+  <!-- Add some interactive behavior -->
+  <script>
+    // Add some fun console messages for developers who find this page
+    console.log(`
+🛡️ NetKnights Cybersecurity Club - 404 Page
+═══════════════════════════════════════════
+
+Looks like you found a missing page! 
+If you're a developer checking this out, welcome to our codebase.
+
+Interested in cybersecurity? Join us!
+Email: netknights@proton.me
+
+Happy hacking (ethically)! 🔐
+    `);
+
+    // Optional: Add some keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      // Press 'h' to go home
+      if (e.key === 'h' || e.key === 'H') {
+        window.location.href = 'index.html';
+      }
+      // Press 'b' to go back
+      if (e.key === 'b' || e.key === 'B') {
+        history.back();
+      }
+    });
+
+    // Add a subtle hint about keyboard shortcuts
+    setTimeout(() => {
+      console.log('💡 Tip: Press "H" to go home or "B" to go back!');
+    }, 2000);
+  </script>
+</body>
+</html>
